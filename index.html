@@ -3,51 +3,43 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Terms of Use — Galaxy Commander</title>
+  <title>Support — Galaxy Commander</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700&family=Exo+2:wght@400;500;600&display=swap" rel="stylesheet" />
   <style>
     :root {
       --void: #070b14;
-      --surface: #0e1528;
       --panel: #141e32cc;
       --holo: #4ee8ff;
       --gold: #e8c547;
       --text: #e8f0ff;
       --muted: #9eb4d4;
       --line: #2e3f5c;
-      --glow: rgba(78, 232, 255, 0.35);
     }
-
     * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
     body {
       margin: 0;
       min-height: 100vh;
       font-family: "Exo 2", system-ui, sans-serif;
       color: var(--text);
       background:
-        radial-gradient(1100px 720px at 88% -8%, rgba(232, 197, 71, 0.1), transparent 52%),
-        radial-gradient(1000px 680px at 5% 12%, rgba(78, 232, 255, 0.1), transparent 48%),
+        radial-gradient(1000px 700px at 15% -5%, rgba(78, 232, 255, 0.1), transparent 50%),
+        radial-gradient(800px 500px at 95% 15%, rgba(232, 197, 71, 0.08), transparent 48%),
         radial-gradient(ellipse at center, #10182a 0%, var(--void) 72%);
       line-height: 1.65;
       font-size: 1.05rem;
     }
-
     .stars {
       position: fixed;
       inset: 0;
       pointer-events: none;
-      background-image:
-        radial-gradient(1.5px 1.5px at 18% 28%, rgba(255,255,255,0.32) 50%, transparent 51%),
-        radial-gradient(1px 1px at 62% 18%, rgba(255,255,255,0.2) 50%, transparent 51%),
-        radial-gradient(1.2px 1.2px at 44% 86%, rgba(255,255,255,0.26) 50%, transparent 51%),
-        radial-gradient(1px 1px at 92% 64%, rgba(255,255,255,0.16) 50%, transparent 51%);
       opacity: 0.5;
+      background-image:
+        radial-gradient(1.5px 1.5px at 12% 22%, rgba(255,255,255,0.3) 50%, transparent 51%),
+        radial-gradient(1px 1px at 78% 35%, rgba(255,255,255,0.2) 50%, transparent 51%);
       z-index: 0;
     }
-
     .wrap {
       position: relative;
       z-index: 1;
@@ -55,47 +47,30 @@
       margin: 0 auto;
       padding: 2.5rem 1.35rem 4rem;
     }
-
-    header {
-      text-align: center;
-      margin-bottom: 2.25rem;
-    }
-
+    header { text-align: center; margin-bottom: 2rem; }
     .badge {
       display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
       padding: 0.35rem 0.85rem;
       border-radius: 999px;
-      border: 1px solid rgba(232, 197, 71, 0.45);
+      border: 1px solid rgba(78, 232, 255, 0.45);
       background: linear-gradient(135deg, rgba(20, 30, 50, 0.92), rgba(14, 21, 40, 0.78));
-      box-shadow: 0 0 22px rgba(232, 197, 71, 0.18);
       font-size: 0.78rem;
       letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: var(--gold);
+      color: var(--holo);
       font-weight: 600;
     }
-
     h1 {
       font-family: "Orbitron", sans-serif;
-      font-weight: 700;
-      font-size: clamp(1.55rem, 4.2vw, 2.05rem);
+      font-size: clamp(1.5rem, 4vw, 2rem);
       letter-spacing: 0.06em;
       margin: 1rem 0 0.35rem;
-      background: linear-gradient(90deg, var(--gold), var(--holo));
+      background: linear-gradient(90deg, var(--text), var(--holo));
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
     }
-
-    .subtitle {
-      color: var(--muted);
-      font-size: 0.98rem;
-      max-width: 36rem;
-      margin: 0 auto;
-    }
-
+    .subtitle { color: var(--muted); font-size: 0.98rem; max-width: 36rem; margin: 0 auto; }
     .card {
       background: var(--panel);
       border: 1px solid var(--line);
@@ -103,11 +78,8 @@
       padding: 1.5rem 1.35rem;
       margin-bottom: 1.1rem;
       backdrop-filter: blur(10px);
-      box-shadow:
-        0 0 0 1px rgba(78, 232, 255, 0.05) inset,
-        0 18px 48px rgba(0, 0, 0, 0.45);
+      box-shadow: 0 0 0 1px rgba(78, 232, 255, 0.05) inset, 0 18px 48px rgba(0,0,0,0.45);
     }
-
     .card h2 {
       font-family: "Orbitron", sans-serif;
       font-size: 1.02rem;
@@ -119,7 +91,6 @@
       align-items: center;
       gap: 0.5rem;
     }
-
     .card h2::before {
       content: "";
       width: 6px;
@@ -127,44 +98,29 @@
       border-radius: 1px;
       background: var(--holo);
       box-shadow: 0 0 12px var(--holo);
-      flex-shrink: 0;
     }
-
-    .card p { margin: 0.5rem 0; color: var(--text); }
-    .card ul { margin: 0.5rem 0 0.25rem; padding-left: 1.2rem; color: var(--muted); }
+    .card p { margin: 0.5rem 0; }
+    .card ul { margin: 0.5rem 0; padding-left: 1.2rem; color: var(--muted); }
     .card li { margin: 0.35rem 0; }
-
     a {
       color: var(--holo);
       text-decoration: none;
       border-bottom: 1px solid rgba(78, 232, 255, 0.35);
     }
-    a:hover { border-bottom-color: var(--holo); }
-
     .contact {
-      border-color: rgba(78, 232, 255, 0.35);
+      border-color: rgba(232, 197, 71, 0.35);
       background: linear-gradient(145deg, rgba(20, 30, 50, 0.92), rgba(10, 14, 26, 0.88));
     }
     .contact h2 { color: var(--holo); }
-    .contact .row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem 1.5rem;
-      margin-top: 0.75rem;
-    }
-    .contact .kv { min-width: 200px; }
-    .contact .label {
+    .row { display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem; margin-top: 0.75rem; }
+    .kv { min-width: 200px; }
+    .label {
       font-size: 0.72rem;
       letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--muted);
     }
-    .contact .value {
-      font-weight: 600;
-      font-size: 1.05rem;
-      margin-top: 0.2rem;
-    }
-
+    .value { font-weight: 600; margin-top: 0.2rem; }
     footer {
       text-align: center;
       margin-top: 2.5rem;
@@ -175,7 +131,7 @@
       height: 1px;
       max-width: 200px;
       margin: 1.25rem auto;
-      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      background: linear-gradient(90deg, transparent, var(--holo), transparent);
       opacity: 0.45;
     }
   </style>
@@ -185,111 +141,63 @@
   <div class="wrap">
     <header>
       <div class="badge">Galaxy Commander</div>
-      <h1>Terms of Use</h1>
-      <p class="subtitle">These terms govern your use of the application. By installing or using the app, you agree to them (subject to any mandatory law).</p>
+      <h1>Support</h1>
+      <p class="subtitle">Get help with the app, report issues, or send feedback. We read every message when we can.</p>
     </header>
 
     <section class="card">
-      <h2>Agreement</h2>
-      <p>By accessing or using <strong>Galaxy Commander</strong> (“the App”), you agree to these Terms of Use and our Privacy Policy (if published). If you do not agree, do not use the App.</p>
-    </section>
-
-    <section class="card">
-      <h2>Eligibility</h2>
-      <p>State the minimum age and any regional requirements (e.g., parental consent). Replace this placeholder with your actual rule.</p>
-    </section>
-
-    <section class="card">
-      <h2>License to use</h2>
-      <p>We grant you a limited, non-exclusive, non-transferable, revocable license to download and use the App for personal, non-commercial entertainment, subject to these Terms and the platform rules (Apple App Store).</p>
-    </section>
-
-    <section class="card">
-      <h2>Acceptable use</h2>
-      <p>You agree not to:</p>
-      <ul>
-        <li>Reverse engineer, decompile, or attempt to extract source code except where permitted by law.</li>
-        <li>Circumvent security, access controls, or payment systems.</li>
-        <li>Use the App to harass others, upload unlawful content, or infringe third-party rights.</li>
-        <li>Automate access or overload systems (bots, scraping) without permission.</li>
-      </ul>
-      <p>Add or remove items to match your product and platform policies.</p>
-    </section>
-
-    <section class="card">
-      <h2>Accounts &amp; purchases</h2>
-      <p>If the App offers in-app purchases or subscriptions, explain that transactions are processed by the platform provider, renewal/cancellation is managed through platform settings, and any free trial rules you offer.</p>
-    </section>
-
-    <section class="card">
-      <h2>Virtual items</h2>
-      <p>If applicable: virtual currency/items have no real-world cash value, are licensed not sold, may be modified or discontinued, and are non-refundable except as required by law or platform policy.</p>
-    </section>
-
-    <section class="card">
-      <h2>Intellectual property</h2>
-      <p>The App, its design, assets, and branding are protected by intellectual property laws. You receive only the rights expressly granted here. Third-party trademarks or content may appear under license or as permitted by law—replace with your accurate statement.</p>
-    </section>
-
-    <section class="card">
-      <h2>Third-party services</h2>
-      <p>The App may integrate third-party services (analytics, ads, authentication, cloud). Their terms may apply. List major categories you actually use.</p>
-    </section>
-
-    <section class="card">
-      <h2>Updates &amp; availability</h2>
-      <p>We may release updates that change features or require installation of new versions. We do not guarantee uninterrupted availability.</p>
-    </section>
-
-    <section class="card">
-      <h2>Disclaimer of warranties</h2>
-      <p><strong>To the maximum extent permitted by law,</strong> the App is provided “as is” and “as available” without warranties of any kind, whether express or implied, including merchantability, fitness for a particular purpose, and non-infringement.</p>
-    </section>
-
-    <section class="card">
-      <h2>Limitation of liability</h2>
-      <p><strong>To the maximum extent permitted by law,</strong> we are not liable for indirect, incidental, special, consequential, or punitive damages, or loss of profits/data, arising from your use of the App. Your sole remedy may be to stop using the App. Adjust caps/exceptions as required in your jurisdiction.</p>
-    </section>
-
-    <section class="card">
-      <h2>Indemnity</h2>
-      <p>To the extent permitted by law, you agree to indemnify and hold harmless the developer from claims arising out of your misuse of the App or violation of these Terms.</p>
-    </section>
-
-    <section class="card">
-      <h2>Termination</h2>
-      <p>We may suspend or terminate access if you violate these Terms or if required for legal or security reasons. You may stop using the App at any time.</p>
-    </section>
-
-    <section class="card">
-      <h2>Governing law</h2>
-      <p>Specify the country/state whose laws govern and the venue for disputes, consistent with Apple’s requirements and your legal advice. Placeholder: <em>[Insert governing law and jurisdiction]</em>.</p>
-    </section>
-
-    <section class="card">
-      <h2>Changes to these terms</h2>
-      <p>We may update these Terms. Material changes may be communicated via the App or by updating the “Last updated” date. Continued use after changes may constitute acceptance—align wording with your lawyer’s recommendation.</p>
-    </section>
-
-    <section class="card contact" id="contact">
-      <h2>Contact</h2>
-      <p>For questions about these Terms:</p>
-      <div class="row">
+      <h2>Contact us</h2>
+      <p>For the fastest response, email us with a short subject line and your device details (see below).</p>
+      <div class="row" style="margin-top:1rem;">
         <div class="kv">
           <div class="label">Developer</div>
           <div class="value">Hakan Çevik</div>
         </div>
         <div class="kv">
           <div class="label">Email</div>
-          <div class="value"><a href="mailto:hakanxcevik7@gmail.com">hakanxcevik7@gmail.com</a></div>
+          <div class="value"><a href="mailto:hakanxcevik7@gmail.com?subject=Galaxy%20Commander%20Support">hakanxcevik7@gmail.com</a></div>
         </div>
       </div>
+    </section>
+
+    <section class="card">
+      <h2>Before you write</h2>
+      <p>Include this information so we can help quickly:</p>
+      <ul>
+        <li><strong>Device model</strong> (e.g. iPhone 15)</li>
+        <li><strong>iOS version</strong> (Settings → General → About)</li>
+        <li><strong>App version</strong> (Settings in the app, or App Store listing)</li>
+        <li>What you expected vs. what happened (steps to reproduce if it’s a bug)</li>
+        <li>Screenshots if they help (no sensitive personal data)</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Common topics</h2>
+      <ul>
+        <li><strong>Purchases &amp; subscriptions:</strong> Restore purchases from the app’s store or subscription screen. If something is missing, email us with your Apple ID purchase receipt snippet (no passwords).</li>
+        <li><strong>Crash or freeze:</strong> Describe what screen you were on and what you tapped last.</li>
+        <li><strong>Account / progress:</strong> Explain if data is local-only or synced (adjust to match your app).</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Legal &amp; policies</h2>
+      <p>Replace these with your live URLs when published:</p>
+      <ul>
+        <li><a href="https://cevik10.github.io/GalaxyCommanderPrivacyPolicy/">Privacy Policy</a></li>
+        <li><a href="https://cevik10.github.io/GalaxyCommanderTermsOfUse/">Terms of Use</a></li>
+      </ul>
+    </section>
+
+    <section class="card contact" id="response">
+      <h2>Response time</h2>
+      <p>We are a small team. Replies may take a few business days. Thank you for your patience.</p>
     </section>
 
     <footer>
       <div class="foot-line"></div>
       <p>© <span id="y"></span> Hakan Çevik · Galaxy Commander</p>
-      <p style="margin-top:0.35rem;">Last updated: <!-- YYYY-MM-DD --> replace when you publish.</p>
     </footer>
   </div>
   <script>
